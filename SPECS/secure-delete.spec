@@ -6,6 +6,7 @@ License:        GPL
 URL:            https://www.thc.org/
 
 Source0:        http://http.debian.net/debian/pool/main/s/secure-delete/secure-delete_%{version}.orig.tar.gz#/%{name}_%{version}.tar.gz
+Patch0:         https://raw.githubusercontent.com/keachi/secure-delete-rpm/master/SOURCES/secure-delete_%{version}-1.diff
 
 BuildRequires:  gcc
 
@@ -14,6 +15,7 @@ This is the best secure data deletion toolkit! If you overwrite a file for 10+ t
 
 %prep
 %setup -q -n %{name}-%{version}.orig
+%patch -P 0 -p 1
 
 %build
 %make_build
