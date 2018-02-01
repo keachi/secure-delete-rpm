@@ -11,7 +11,10 @@ Patch0:         https://raw.githubusercontent.com/keachi/secure-delete-rpm/maste
 BuildRequires:  gcc
 
 %description
-This is the best secure data deletion toolkit! If you overwrite a file for 10+ times, it can still be recovered. Read why and use the programs included (w/src!). These tools can wipe files, free disk space, swap and memory! Changes: Linux LKM for secure file deletion included, small bufixes.
+This is the best secure data deletion toolkit! If you overwrite a file for 10+
+times, it can still be recovered. Read why and use the programs included
+(w/src!). These tools can wipe files, free disk space, swap and memory!
+Changes: Linux LKM for secure file deletion included, small bufixes.
 
 %prep
 %setup -q -n %{name}-%{version}.orig
