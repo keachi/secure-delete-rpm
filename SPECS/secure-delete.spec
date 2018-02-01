@@ -1,3 +1,5 @@
+%global debug_package %{nil}
+
 Name:           secure-delete
 Version:        3.1
 Release:        1%{?dist}
